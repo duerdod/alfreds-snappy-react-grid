@@ -1,6 +1,6 @@
 {
   "name": "snappy-react-grid",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "author": "Alfred Ringstad, Jonatan Svennberg",
   "main": "dist/index.js",
@@ -38,16 +38,16 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.23",
-    "@types/react": "^16.9.16",
-    "@types/react-dom": "^16.9.4",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "husky": "^3.1.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^18",
+    "react-dom": "^18",
     "tsdx": "^0.11.0",
     "tslib": "^1.10.0",
     "typescript": "^3.7.3"
   },
   "dependencies": {
-    "use-resize-observer": "hyperlab/use-resize-observer#875ee3ee7ba1bc3b2d06d7f78316028608a25a41"
+    "use-resize-observer": "^9.1.0"
   }
 }
