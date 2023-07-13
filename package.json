@@ -1,6 +1,6 @@
 {
-  "name": "snappy-react-grid",
-  "version": "0.3.2",
+  "name": "@jetshop/snappy-react-grid",
+  "version": "0.3.3",
   "license": "MIT",
   "private": "false",
   "author": "Alfred Ringstad, Jonatan Svennberg",
