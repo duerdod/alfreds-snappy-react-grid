@@ -1,6 +1,7 @@
 import React, {
   useRef,
   useState,
+  useEffect,
   useLayoutEffect,
   useCallback,
   useMemo,
@@ -80,6 +81,9 @@ function stylesForItem({
 }
 
 const lastKnownHeights = {} as Record<string, number | null>;
+
+const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 export function SnappyReactGrid({
   id = 'default',
@@ -173,7 +177,7 @@ export function SnappyReactGrid({
     }
   }, [updateItemVisibility, onScroll]);
 
-  useLayoutEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     styleCache.current = {};
     updateItemVisibility();
 
